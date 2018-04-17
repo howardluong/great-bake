@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+<title>The Great Bake</title>
+<link href="gb-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<!--Header and Nav -->
+<div class="col-12 header">
+  <div class="index-nav">
+    <div class="col-12 logo"></div>
+	<div class="col-12 nav darker-text">
+	    <a href="index.html">Home</a>
+	    <a href="gb-the-goods.html">The Goods</a>
+		<a href="gb-about.html">About Us</a>
+		<a href="gb-locations.html">Locations</a>
+		<a href="gb-contact.html">Contact</a>
+	</div>
+  </div>
+</div>
+<!--Body Text -->
+<div class="row">
+  <div class="col-12">
+  	<p class="headings">love through baking</p>
+  </div>
+</div>
+
+<div class="row">
+	<div class="specialize-container col-12">
+      <div class="split-text col-6">
+		  <p><span id="special">Specializing in deserts.</span></p> 
+     <div class="text-box-2"><p>Our passion for deserts and our strive for excellence is what we built our business on. All of our products embrace traditional methods of baking from old school Chinese methods with an added french twist.</p></div>
+      </div>
+	  <div class="split-container col-6">
+        <img id="split1" src="img/macaroon-1-2.gif"/>
+        <img id="split2" src="img/macaroon-2-2.gif"/>
+	  </div>
+	</div>
+</div>
+
+<section class="row">
+	<div class="slider col-12">
+	    <!--Slideshow-->
+		<div class="slider-container" style="width: 70%;">
+			<div class="eachSlide fade">
+  				<img class="middle" src="img/slide1.gif" style="width:100%">
+			</div> 
+ 		
+  			<div class="eachSlide fade">
+  				<img class="middle" src="img/slide2.gif" style="width:100%">
+  			</div> 
+  		
+  			<div class="eachSlide fade">
+  				<img class="middle" src="img/slide3.gif" style="width:100%">
+  			</div> 
+  		
+   			<div class="eachSlide fade">
+  				<img class="middle" src="img/slide4.gif" style="width:100%">
+			</div>
+		
+			<a class="prev" onclick="incrementSlides(-1)">&#10094;</a>
+			<a class="next" onclick="incrementSlides(1)">&#10095;</a>
+		</div>
+
+<!-- 		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+  			<span class="dot" onclick="currentSlide(2)"></span> 
+  			<span class="dot" onclick="currentSlide(3)"></span> 
+  			<span class="dot" onclick="currentSlide(4)"></span> 
+		</div> -->
+		
+		<!--Textbox to the right of slider -->
+		<div class="col-12">
+			<div id="smile-text">
+				<p>Putting a smile on everyones face, <br><span>through their tastebuds.</span></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="row">
+	<div class="col-7 localtextbox" id="local-text">
+		<p><span>Your local friendly bakery</span></p>
+  	  <br>
+  	  <br>
+  	  <div class="text-box">
+  	    <p>We have been serving our local community of the greater Toronto area for the last 10 years</p>
+	  </div>
+    </div>
+
+	<div class="col-5" id="cafe"><img src="img/smile.gif"/></div>
+</div>
+
+<!-- Footer -->
+<div class="row">
+  <div class="footer">
+	<div class="logo-trademark-container col-4">
+		 <div class="footer-logo"><a href="index.html"><img src="img/great-bake-logo-white.png"></a></div>
+		 <div class="trademark">
+		 	<p> &copy Helen's Great Bake. All rights reserved.</p>
+		 </div>
+	</div>
+	<div class="col-5"><br></div>
+	<div class="col-1"><div class="social-media"><a href="#"><img src="img/fb-logo.png"></a></div></div>
+	<div class="col-1"><div class="social-media"><a href="#"><img src="img/ig-logo.png"></a></div></div>
+	<div class="col-1"><div class="social-media"><a href="#"><img src="img/twitter-logo.png"></a></div></div>
+  </div>
+</div>
+
+<script src="jQuery/jquery-3.2.1.js"></script>
+<script src="gb-js.js"></script>
+
+</body>
+</html>

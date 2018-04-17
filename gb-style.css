@@ -1,0 +1,868 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.header {
+	background-image: url(img/gb-header2final.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 491px;
+	max-width: 100%;
+}
+
+.col-12 .index-nav {
+	height: 125px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+	overflow: hidden;
+	text-align: right;
+}
+
+.nav a {
+	color: #F4F4F4;
+	text-decoration: none;
+	padding-right: 15px;
+	font-family: arabella;
+	font-size: 24px;
+	display: inline-block;
+}
+
+.nav a:hover {
+	color: #1E1E1E;
+	border-bottom: solid;
+	border-bottom-color: #5F4ACB;
+}
+
+.other-nav {
+	background-color: #19807D;
+	height: 125px;
+}
+
+.logo {
+	background-image: url(img/great-bake-logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 65%;	
+}
+
+
+.headings {
+	font-size: 7vw;
+	text-align: center;
+	font-family: Arabella;
+	color: #178380;
+}
+
+.row .specialize-container {
+	padding-bottom: 7%;
+}
+
+.split-container {
+	height: 300px;
+}
+
+.row .specialize-container .split-text {
+	font-family: helvetica;
+	font-size: 1.5vw;
+	text-align: right;
+	color: #676767;
+} 
+
+#special {
+	font-family: arabella;
+	font-size: 5vw;
+	color: #04A398;
+}
+
+.row .specialize-container .split-container {
+	text-align: center;
+}
+
+.row .specialize-container .split-container #split1 {
+	max-height: 100%;
+	margin-right: 5px;
+}
+
+.row .specialize-container .split-container #split2 {
+	max-height: 100%;
+}
+
+section .slider-container {
+  	max-width: 100%;
+  	position: relative;
+  	margin: auto; 
+}
+
+section .slider-container .eachSlide {
+    display: none; 
+}
+
+section .slider-container .eachSlide .middle {
+    vertical-align: middle; 
+}
+
+section .slider-container .prev, section .slider-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0; 
+}
+
+.next {
+  	right: 0;
+  	border-radius: 3px 0 0 3px; 
+}
+
+.prev:hover, .next:hover {
+  	background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 0.4s;
+  	animation-name: fade;
+  	animation-duration: 0.4s; 
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .1; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .1; }
+  to {
+    opacity: 1; } 
+}
+.dot {
+  	cursor: pointer;
+  	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease; 
+}
+
+.active, .dot:hover {
+  	background-color: #717171; 
+}
+
+/*.slide {
+	padding-bottom: 7%;
+}
+
+.row .col-7 {
+	padding-left: 1%;
+}
+
+.row .col-12 .col-7 .slider-container .home-outer-slide {
+	width: 100%;
+	height: 450px;
+}
+
+.row .col-12 .col-7 .slider-container .home-outer-slide .home-inner-slide {
+	width: 100%;
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.row .col-12 .col-7 .slider-container .home-outer-slide .home-inner-slide img {
+	width: 100%;
+	height: 450px;
+	display: none;
+}
+
+.row .col-12 .col-7 .slider-container .home-outer-slide .home-inner-slide img.active {
+	display: inline-block;
+}
+
+.row .col-12 .col-7 .slider-container .home-outer-slide .prev, .next {
+	float: left;
+	margin-top: 200px;
+	cursor: pointer;
+	font-size: 1vw;
+	font-weight: bold;
+}
+
+.row .col-12 .col-7 .slider-container .home-outer-slide .prev {
+	position: relative;
+	margin-right: -45px;
+	z-index: 100;
+}
+
+.prev, .next {
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prev:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.row .col-12 .col-7 .slider-container .home-outer-slide .next {
+	position: relative;
+	margin-left: -32px;
+	z-index: 100;
+}*/
+
+.text-box {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.15vw;
+}
+
+.text-box-2 {
+	width: 75%;
+	margin-left: 25%;
+	font-size: 1.15vw;
+}
+
+.text-box-3 {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: -10%;
+	font-family: helvetica;
+	color: #AFAFAF;
+	text-align: center;
+	font-size: 1.15vw;
+}
+
+.text-box-4 {
+	width: 55%;
+	margin-left: 20%;
+	font-size: 1.15vw;
+}
+
+#smile-text {
+	text-align: center;
+	font-family: helvetica;
+	font-size: 2vw;
+	font-weight: bold;
+	color: #222222;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 2;
+	margin-top: 6rem;
+}
+
+#smile-text span {
+    font-size: 2.5vw;
+	color: #0170BA;
+}
+
+#local-text span{
+	font-family: arabella;
+	font-size: 5vw;
+	color: #04A398;
+}
+
+#local-text {
+	font-family: helvetica;
+	font-size: 1.5vw;
+	text-align: center;
+	color: #676767;
+}
+
+#cafe {
+	overflow: hidden;
+	
+}
+
+#cafe img {
+	width: 98%;
+	padding-left: 2%;
+}
+
+.row .the-goods-header {
+	background-image: url(img/gb-home-header.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+.row .hidden-product-description {
+	display: none;
+}
+
+
+.row .products .col-8 {
+	display: block;
+}
+
+.row .products .col-8 .product-img-container {
+	width: 100%;
+
+}
+
+.row .products .col-8 .product-img-container .cake-img {
+	width: 80%;
+	margin: 5%;
+
+}
+
+.row .products .col-8 .product-img-container .cake-img img {
+	width: 100%;
+}
+
+.row .products .col-4 {
+}
+
+.row .products .product-container .product-btn-container {
+	text-align: center;
+}
+.row .products .product-container {
+	margin-top: 5%;
+}
+
+.product-select {
+	background-color: #2DAFA5;
+	border-radius: 5px;
+	width: 50%;
+	border: none;
+	cursor: pointer;
+	font-family: helvetica;
+	font-size: 1.2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #EFEFEF;
+	margin-top: 5px;
+}
+
+.product-select:hover {
+	background-color: #229289;
+}
+
+.product-description {
+	font-family: helvetica;
+	letter-spacing: 0.02vw;
+	text-align: center;
+	line-height: 2vw;
+	font-size: 1.2vw;
+	color: #AFAFAF;
+}
+
+.row .hidden-cake-product-description {
+	display: none;
+}
+
+.row .cake-highlight-container {
+	height: 250px;
+	background-color: #1178BD;
+}
+
+.row .cake-highlight-container .highlights {
+	font-family: helvetica;
+	font-size: 4vw;
+}
+
+.row .about-container {
+	margin-top: 5%;
+}
+
+.row .about-container .about-us-text-container {
+	
+}
+
+.row .about-container .about-us-text-container #about-us {
+	font-family: Arabella;
+	font-size: 7vw;
+	text-align: center;
+	color: #19807D;
+	margin-top: -3%;
+}
+
+.row .about-container .split-container {
+	max-height: 100%;
+}
+
+.row .about-container .split-container #split3 {
+	max-height: 100%;
+	margin-right: 2%;
+	width: 30%;
+	float: left;
+	margin-left: 10%;
+}
+
+.row .about-container .split-container #split4 {
+	max-height: 100%;
+	width: 30%;
+	float: left;
+}
+
+.row .ingredients-container {
+	margin-top: 5%;
+}
+
+.row .ingredients-container .ingredients-img-container {
+	text-align: right;
+}
+
+.row .ingredients-container .ingredients-img-container img {
+	width: 85%;
+}
+
+.row .ingredients-container .ingredients-text-container {
+	font-family: helvetica;
+}
+
+.row .ingredients-container .ingredients-text-container #real-ingredients {
+	font-family: arabella;
+	font-size: 6vw;
+	color: #19807D;
+	text-align: center;
+	margin-top: -2%;
+}
+
+.row .ingredients-container .ingredients-text-container .text-box-3 {
+	font-size: 1.
+}
+
+.row .fresh-everyday-container {
+	background-image: url(img/fresh-everyday-bg.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height: 500px;
+	margin-top: 5%;
+}
+
+.row .fresh-everyday-container .fresh-text {
+	text-align: center;
+	font-family: helvetica;
+	color: #AFAFAF;
+}
+
+.row .fresh-everyday-container .fresh-text #fresh-everyday {
+	font-family: arabella;
+	font-size: 5vw;
+	color: #19807D;
+}
+
+.row .fresh-everyday-container .fresh-text #fresh-everyday span {
+	border-bottom: 2px solid black;
+	border-color: #19807D;
+	
+}
+
+.row .map #gb-map {
+	width: 90%;
+	height: 500px;
+	margin-left: 5%;
+	border: 0;
+}
+
+.row .location-header #great-bake {
+	font-family: akaDora;
+	font-size: 5vw;
+	text-align: center;
+	color: #19807D;
+}
+
+.row .location-header #location {
+	font-family: helvetica;
+	font-size: 3.5vw;
+	text-align: center;
+	color: #AFAFAF;
+	margin-top: -2%;
+	text-transform: uppercase;
+}
+
+.row .schedule-container .schedule {
+	font-family: helvetica;
+	list-style-type: none;
+	font-size: 1.2vw;
+	line-height: 1.4;
+	text-align: center;
+	color: #AFAFAF;
+}
+
+.row .hours-location {
+	margin-top: 5%;
+}
+
+.row .hours-location .schedule-container .schedule #open-close {
+	font-size: 2vw;
+	color: #19807D;
+}
+
+.row .hours-location .gb-location-img-container #location-img {
+	width: 80%;
+}
+
+.row .hours-location .gb-location-img-container #toronto {
+	font-weight: bold;
+	font-size: 1.4vw;
+}
+
+.row .hours-location .gb-location-img-container .text-box-5 {
+	font-family: helvetica;
+	font-size: 1.1vw;
+}
+
+.contact-form-container {
+	font-family: helvetica;
+	font-weight: 600;
+	color: #AFAFAF;
+}
+
+.row .contact-heading {
+	text-align: center;
+	font-family: helvetica;
+	font-size: 3vw;
+	text-transform: uppercase;
+}
+
+.row .contact-heading #contact-us {
+	font-family: arabella;
+	font-size: 8vw;
+	text-transform: none;
+	color: #19807D;
+}
+
+input[type=text], textarea {
+	width: 90%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius:4px;
+	resize: vertical;
+}
+
+label {
+	display: inline-block;
+}
+
+#message {
+	height: 200px;
+}
+
+.input-guide {
+	padding-left: 5%;
+}
+
+input[type=submit] {
+	background-color: #19807D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer; 
+	margin-left: 17%;
+	margin-top: 1%;
+}
+
+.row .footer {
+	height: 300px;
+	background-color: #19807D;
+	margin-top: 5%;
+}
+
+.row .footer .col-4 .footer-logo {
+	margin-top: 20%;
+	margin-left: 10%;
+}
+
+.row .footer .col-4 .footer-logo img {
+	width: 30%;
+}
+
+.row .footer .col-4 .trademark {
+	color: white;
+	margin-top: 15%;
+	padding-left: 5%;
+}
+
+.row .footer .col-1 .social-media {
+	margin-top: 100%;
+}
+
+.row .footer .col-1 .social-media img {
+	width: 40%;
+}
+
+.row .footer .col-1 .social-media img:hover {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 900px){
+
+    .row .specialize-container {
+	    display: none;
+    }
+
+    .row .specialize-container .split-container {
+	    display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+	
+	.nav {
+		margin-top: 6.5%;
+	}
+	
+	.nav a {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px;
+		background-color: gray;
+		text-align: center;
+	}
+	
+	.logo {
+		background-image: none;
+	}
+	
+	#local-text {
+		font-size: 5vw;
+		float: none;
+		margin-right: 0;
+		width: auto;
+		border: 0;
+	    color: #676767;
+	}
+	
+	#local-text span {
+		font-size: 8vw;
+	}
+	
+	#cafe {
+		width: 100%;
+	}
+	
+/*	.row .slide .col-7 .slider-container {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+		margin-left: 35%;
+	}*/
+	
+	.row .slide .col-5 {
+		width: 100%;
+	}
+	
+	#smile-text {
+		font-size: 4vw;
+		margin-top: 80px;
+	}
+	
+	.social-media img {
+		width: 90%;
+	}
+	
+	.row .products .product-img-container .cake-img img {
+		width: 100%;
+		margin-left: 39%;
+	}
+	
+	.row .products .product-container {
+		display: none;
+	}
+	
+	.row .hidden-product-description {
+	    width: 80%;
+		margin-left: 10%;
+    }
+	
+	.row .hidden-cake-product-description {
+		display: block;
+		
+	}
+	
+	.row .hidden-cake-product-description .hidden-product-btn {
+		padding: 10px;
+		display: block;
+		width: 100%;
+		background-color: #19807D;
+		color: white;
+		font-size: 5vw;
+		border: none;
+		cursor: pointer;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	
+	.row .hidden-product-description {
+	    display: block;
+		font-family: helvetica;
+	    letter-spacing: 0.01vw;
+	    text-align: center;
+	    line-height: 4.5vw;
+	    font-size: 3.5vw;
+		color: #AFAFAF;
+	}
+	
+	.row .split-text {
+	    display: none;
+    }
+
+    .row .specialize-container .split-container {
+	    display: none;
+    }
+	
+	.row .about-container .about-us-text-container {
+		float: none;
+		margin-right: 0;
+		width: auto;
+		margin-bottom: 2%;
+	}
+	
+	.row .about-container .about-us-text-container .text-box-3 {
+		margin-top: 2%;
+		font-size: 3.5vw;
+		text-align: none;
+		width: 80%;
+	}
+	
+	.row .about-container .split-container {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.row .about-container .split-container #split3 {
+		margin-left: 20%;
+	}
+	
+
+    .row .ingredients-container .ingredients-img-container {
+		float: none;
+		margin-right: 0;
+		width: auto;
+    }
+
+    .row .ingredients-container .ingredients-img-container img {
+		margin-right: 8%;
+    }
+
+    .row .ingredients-container .ingredients-text-container {
+	    width: 100%;
+    }
+
+    .row .ingredients-container .ingredients-text-container #real-ingredients {
+	    font-family: arabella;
+	    font-size: 6vw;
+	    color: #19807D;
+	    text-align: center;
+	    margin-top: 2%;
+    }
+	
+	.row .ingredients-container .ingredients-text-container .text-box-3 {
+		margin-top: 2%;
+		font-size: 3.5vw;
+		width: 80%;
+	}
+
+    .row .fresh-everyday-container {
+	    background-image: url(img/fresh-everyday-bg.gif);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    max-width: 100%;
+	    height: 500px;
+	    margin-top: 5%;
+    }
+
+    .row .fresh-everyday-container .fresh-text {
+		width: 100%;
+		margin-left: 5%;
+    }
+
+    .row .fresh-everyday-container .fresh-text #fresh-everyday {
+	    font-size: 10vw;
+    }
+	
+	.row .fresh-everyday-container .fresh-text .text-box-4 {
+		font-size: 3.5vw;
+	}
+	
+	.row .localtextbox .text-box {
+		margin-top: -10%;
+		font-size: 3.5vw;
+	}
+	
+	.row .hours-location .schedule-container {
+		margin-left: 19%;
+	}
+	
+	.row .hours-location .schedule-container .schedule #open-close {
+		font-size: 4vw;
+	}
+	
+	.row .hours-location .schedule-container .schedule {
+	    margin-right: 0;
+	    float: none;
+		width: auto;
+		margin-left: 5%;
+		font-size: 3.5vw;
+    }
+	
+	.row .hours-location .gb-location-img-container	{
+		margin-left: 10%;
+	}
+	
+	.row .hours-location .gb-location-img-container	 .text-box-5 {
+		font-size: 3.5vw;
+	}
+	
+	.row .hours-location .gb-location-img-container #toronto {
+		font-size: 4vw;
+	}
+
+    .row .hours-location .gb-location-img-container {
+	    width: 100%;
+    }
+	
+	.input-guide, .input-section {
+		width: 100%;
+		padding-left: 5%;
+	}
+
+}
+
+
