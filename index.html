@@ -6,9 +6,16 @@
 <link href="gb-style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onload="loadPage()" id="mainContent">
 
+<div class="preload" id="preload">
 
+	<div class="loader-frame">
+		<div class="loader1" id="loader1">
+			<img style="text-align: center;" src="loadingSpinner.png">
+		</div>
+	</div>
+</div>
 <!--Header and Nav -->
 <div class="col-12 header">
   <div class="index-nav">
@@ -36,8 +43,8 @@
      <div class="text-box-2"><p>Our passion for deserts and our strive for excellence is what we built our business on. All of our products embrace traditional methods of baking from old school Chinese methods with an added french twist.</p></div>
       </div>
 	  <div class="split-container col-6">
-        <img id="split1" src="img/macaroon-1-2.gif"/>
-        <img id="split2" src="img/macaroon-2-2.gif"/>
+        <img id="split1" src="img/macaroon-1-2.jpg"/>
+        <img id="split2" src="img/macaroon-2-2.jpg"/>
 	  </div>
 	</div>
 </div>
@@ -47,19 +54,19 @@
 	    <!--Slideshow-->
 		<div class="slider-container" style="width: 70%;">
 			<div class="eachSlide fade">
-  				<img class="middle" src="img/slide1.gif" style="width:100%">
+  				<img class="middle" src="img/slide1.jpg" style="width:100%">
 			</div> 
  		
   			<div class="eachSlide fade">
-  				<img class="middle" src="img/slide2.gif" style="width:100%">
+  				<img class="middle" src="img/slide2.jpg" style="width:100%">
   			</div> 
   		
   			<div class="eachSlide fade">
-  				<img class="middle" src="img/slide3.gif" style="width:100%">
+  				<img class="middle" src="img/slide3.jpg" style="width:100%">
   			</div> 
   		
    			<div class="eachSlide fade">
-  				<img class="middle" src="img/slide4.gif" style="width:100%">
+  				<img class="middle" src="img/slide4.jpg" style="width:100%">
 			</div>
 		
 			<a class="prev" onclick="incrementSlides(-1)">&#10094;</a>
@@ -83,7 +90,7 @@
 </section>
 
 
-<div class="row">
+<div class="row" style="margin-top: 5%;">
 	<div class="col-7 localtextbox" id="local-text">
 		<p><span>Your local friendly bakery</span></p>
   	  <br>

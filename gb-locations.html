@@ -6,7 +6,19 @@
 <link href="gb-style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onload="loadPage()" id="mainContent">
+
+<div class="preload" id="preload">
+	<div id="preloadMessage">
+		<p class="text-white fran-font"></p>
+	</div>
+
+	<div class="loader-frame">
+		<div class="loader1" id="loader1">
+			<img src="loadingSpinner.png">
+		</div>
+	</div>
+</div>
 
 <div class="col-12">
   <div class="other-nav">
@@ -50,7 +62,7 @@
 		</ul>
 	</div> 
 	<div class="gb-location-img-container col-6">
-		<img id="location-img" src="img/pexels-photo-305832.jpeg"/>
+		<img id="location-img" src="img/pexels-photo-305832.jpg"/>
 		<p class="text-box-5"><span id="toronto">Toronto</span>
 		<br>
 		3671 Weston Rd, North York, ON
@@ -76,5 +88,7 @@
 	<div class="col-1"><div class="social-media"><a href="#"><img src="img/twitter-logo.png"></a></div></div>
   </div>
 </div>
+
+<script src="gb-js.js"></script>
 </body>
 </html>

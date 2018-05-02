@@ -1,6 +1,25 @@
+var timedShowPage;
+var displayP;
+
+function loadPage() {
+    timedShowPage = setTimeout(showPage, 1000);
+    displayP = setTimeout(block, 1900);
+}
+
+function block() {
+	document.getElementById("mainContent").style.display = "block";
+  	document.getElementById("preload").style.display = "none";
+}
+
+function showPage() {
+
+  document.getElementById("preload").style.opacity = 0;
+  document.getElementById("mainContent").style.opacity = 1;
+  document.getElementById("preload").style.zIndex = 0;
+}
+
+
 $(document).ready(function(){
-	
-	"use strict";
 	
 	$('.next').on('click', function(){
 		var currentImg = $('.active');
@@ -297,17 +316,17 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function incrementSlides(arg) {
-	"use strict";
+	
   showSlides(slideIndex += arg);
 }
 
 function currentSlide(arg) {
-	"use strict";
+	
   showSlides(slideIndex = arg);
 }
 
 function showSlides(arg) {
-	"use strict";
+	
   var i;
   var slides = document.getElementsByClassName("eachSlide");
   var dots = document.getElementsByClassName("dot");
@@ -326,3 +345,4 @@ function showSlides(arg) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
