@@ -34,9 +34,10 @@ body {
 
 .header {
 	background-image: url(img/gb-header2final.jpg);
-	background-size: contain;
+	background-size: cover;
+	background-position: center center;
 	background-repeat: no-repeat;
-	height: 491px;
+	min-height: 550px;
 	max-width: 100%;
 }
 
@@ -54,7 +55,7 @@ body {
 	color: #F4F4F4;
 	text-decoration: none;
 	padding-right: 15px;
-	font-family: arabella;
+	font-family: 'Pacifico', cursive;
 	font-size: 24px;
 	display: inline-block;
 }
@@ -81,7 +82,7 @@ body {
 .headings {
 	font-size: 7vw;
 	text-align: center;
-	font-family: Arabella;
+	font-family: 'Pacifico', cursive;
 	color: #178380;
 }
 
@@ -101,7 +102,7 @@ body {
 } 
 
 #special {
-	font-family: arabella;
+	font-family: 'Pacifico', cursive;
 	font-size: 5vw;
 	color: #04A398;
 }
@@ -188,72 +189,6 @@ section .slider-container .prev, section .slider-container .next {
   	background-color: #717171; 
 }
 
-/*.slide {
-	padding-bottom: 7%;
-}
-
-.row .col-7 {
-	padding-left: 1%;
-}
-
-.row .col-12 .col-7 .slider-container .home-outer-slide {
-	width: 100%;
-	height: 450px;
-}
-
-.row .col-12 .col-7 .slider-container .home-outer-slide .home-inner-slide {
-	width: 100%;
-	height: 450px;
-	position: relative;
-	overflow: hidden;
-	float: left;
-}
-
-.row .col-12 .col-7 .slider-container .home-outer-slide .home-inner-slide img {
-	width: 100%;
-	height: 450px;
-	display: none;
-}
-
-.row .col-12 .col-7 .slider-container .home-outer-slide .home-inner-slide img.active {
-	display: inline-block;
-}
-
-.row .col-12 .col-7 .slider-container .home-outer-slide .prev, .next {
-	float: left;
-	margin-top: 200px;
-	cursor: pointer;
-	font-size: 1vw;
-	font-weight: bold;
-}
-
-.row .col-12 .col-7 .slider-container .home-outer-slide .prev {
-	position: relative;
-	margin-right: -45px;
-	z-index: 100;
-}
-
-.prev, .next {
-	padding: 10px;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.prev:hover {
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-.next:hover {
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-.row .col-12 .col-7 .slider-container .home-outer-slide .next {
-	position: relative;
-	margin-left: -32px;
-	z-index: 100;
-}*/
-
 .text-box {
 	width: 50%;
 	margin: 0 auto;
@@ -300,7 +235,7 @@ section .slider-container .prev, section .slider-container .next {
 }
 
 #local-text span{
-	font-family: arabella;
+	font-family: 'Pacifico', cursive;
 	font-size: 5vw;
 	color: #04A398;
 }
@@ -413,7 +348,7 @@ section .slider-container .prev, section .slider-container .next {
 }
 
 .row .about-container .about-us-text-container #about-us {
-	font-family: Arabella;
+	font-family: 'Pacifico', cursive;
 	font-size: 7vw;
 	text-align: center;
 	color: #19807D;
@@ -455,7 +390,7 @@ section .slider-container .prev, section .slider-container .next {
 }
 
 .row .ingredients-container .ingredients-text-container #real-ingredients {
-	font-family: arabella;
+	font-family: 'Pacifico', cursive;
 	font-size: 6vw;
 	color: #19807D;
 	text-align: center;
@@ -468,7 +403,7 @@ section .slider-container .prev, section .slider-container .next {
 
 .row .fresh-everyday-container {
 	background-image: url(img/fresh-everyday-bg.jpg);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	max-width: 100%;
 	height: 500px;
@@ -482,7 +417,7 @@ section .slider-container .prev, section .slider-container .next {
 }
 
 .row .fresh-everyday-container .fresh-text #fresh-everyday {
-	font-family: arabella;
+	font-family: 'Pacifico', cursive;
 	font-size: 5vw;
 	color: #19807D;
 }
@@ -501,7 +436,7 @@ section .slider-container .prev, section .slider-container .next {
 }
 
 .row .location-header #great-bake {
-	font-family: akaDora;
+	font-family: 'Pacifico', cursive;
 	font-size: 5vw;
 	text-align: center;
 	color: #19807D;
@@ -562,7 +497,7 @@ section .slider-container .prev, section .slider-container .next {
 }
 
 .row .contact-heading #contact-us {
-	font-family: arabella;
+	font-family: 'Pacifico', cursive;
 	font-size: 8vw;
 	text-transform: none;
 	color: #19807D;
@@ -606,7 +541,7 @@ input[type=submit] {
 }
 
 .row .footer .col-4 .footer-logo {
-	margin-top: 20%;
+	margin-top: 1rem;
 	margin-left: 10%;
 }
 
@@ -832,7 +767,7 @@ input[type=submit] {
     }
 
     .row .ingredients-container .ingredients-text-container #real-ingredients {
-	    font-family: arabella;
+	    font-family: 'Pacifico', cursive;
 	    font-size: 6vw;
 	    color: #19807D;
 	    text-align: center;
